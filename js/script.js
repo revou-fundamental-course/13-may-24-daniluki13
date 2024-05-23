@@ -15,7 +15,7 @@ function hideOrShow(){
 
 }
 
-//Rumus Luas
+//Rumus Luas Segitiga
 function validation(){
     let alasValue = document.getElementById('alas-input').value;
     let tinggiValue = document.getElementById('tinggi-input').value;
@@ -32,7 +32,7 @@ function validation(){
     }
 }
 
-//Rumus Keliling
+//Rumus Keliling Segitiga
 function validationKeliling(){
     let  sisi1Value= document.getElementById('sisi1-input').value;
     let  sisi2Value= document.getElementById('sisi2-input').value;
