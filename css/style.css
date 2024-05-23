@@ -1,4 +1,6 @@
 /* Ini CSS */
+
+/* Segitiga */
 .section-content{
     background-color: chocolate;
     color: white;
@@ -7,10 +9,12 @@
     text-align: center;
 }
 
+/* Luas dan Keliling */
 .section-content>h3{
     margin: 0;
 }
 
+/* swirch page */
 #switch-keliling{
     padding-top: 12px;
     padding-bottom: 12px;
@@ -20,6 +24,7 @@
     color: blue;
 }
 
+/* gambar */
 img{
     height: 150px;
     width: 250px;
@@ -29,6 +34,7 @@ img{
     text-align: center;
 }
 
+/* input nilai */
 input{
     width: 100%;
     background-color: bisque;
@@ -43,9 +49,4 @@ form>button{
     border-radius: 18px;
     border: 1px solid chocolate;
     background-color: bisque;
-}
-
-#reset-btn{
-    background-color: cadetblue;
-    color: white;
 }

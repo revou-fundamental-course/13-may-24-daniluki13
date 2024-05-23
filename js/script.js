@@ -1,5 +1,6 @@
 // Ini JS
 
+//Switch Page
 let isKelilingVisible = false; //Keliling is Hide
 function hideOrShow(){
     if(isKelilingVisible ==false){
@@ -14,7 +15,7 @@ function hideOrShow(){
 
 }
 
-
+//Rumus Luas
 function validation(){
     let alasValue = document.getElementById('alas-input').value;
     let tinggiValue = document.getElementById('tinggi-input').value;
@@ -27,10 +28,11 @@ function validation(){
     if(alasValue != '' && tinggiValue != '' ){
         console.log('sukses validasi');
     } else{
-        alert('inputan kosong');
+        alert('inputan tidak boleh kosong');
     }
 }
 
+//Rumus Keliling
 function validationKeliling(){
     let  sisi1Value= document.getElementById('sisi1-input').value;
     let  sisi2Value= document.getElementById('sisi2-input').value;
@@ -38,6 +40,12 @@ function validationKeliling(){
 
     let keliling = parseInt(sisi1Value) + parseInt(sisi2Value) + parseInt(sisi3Value);
     document.getElementById('output2').innerHTML = "Keliling Segitiga = " +keliling;
+
+    if(sisi1Value != '' && sisi2Value != '' && sisi3Value !=''){
+        console.log('sukses validasi');
+    } else{
+        alert('inputan tidak boleh kosong');
+    }
 }
 
 function resetForm() {
