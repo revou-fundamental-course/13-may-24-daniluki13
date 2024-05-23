@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Triangle Calculate</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Calculator</h1>
+        <h1>Welcome to My Page</h1>
         <section>
             <p>
-                Hi welcome to my calculator
+                Hi, Welcome to My Content, konten kali ini adalah tentang perhitungan luas dan keliling pada segitiga.
             </p>
         </section>
     </header>
@@ -22,9 +22,9 @@
             <h3>Segitiga</h3>
         </div>
     
-        <button type="button" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></button>
+        <button type="button" id="switch-keliling" onclick="hideOrShow();"><u>Switch Page</u></button>
 
-        <section>
+        <section  id="luas-section">
             <!-- Konten Atas Luas Segitiga -->
             <section>
                 <div class="section-content">
@@ -32,10 +32,16 @@
                 </div>
     
                 <div class="formula-img">
+                    <img src="assets/segitiga.png" alt="">
                     <img src="https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png" alt="">
                 </div>
     
-                <p>Lorem Ipsum</p>
+                <p>Rumus Luas Segitiga adalah => <b>L = 1/2 * a * t</b></p> 
+                <b>Penting</b>
+                <br>
+                <p>L = Luas</p>
+                <p>a = Alas</p>
+                <p>t = Tinggi</p>
             </section>
 
             <!-- Pemisah Konten -->
@@ -47,65 +53,74 @@
                     <h2>Hitung Luas Segitiga</h2>
                 </header>
 
-                <form action="">                  
+                <form>                  
                     <section>
                         <div>
-                            <label for="">Alas:</label><input type="text">
+                            <label>Masukan Alas Segitiga :</label><input id="alas-input" type="number">
                         </div>
                         <div>
-                            <label for="">Tinggi:</label><input type="text">
+                            <label>Masukan Tinggi Segitiga:</label><input id="tinggi-input" type="number">
                         </div> 
                     </section>
 
-                    <p>Diketahui Lorem Ipsum...</p>
+                    <p id="output"></p>
 
-                    <button type="button">Hitung</button>
-                    <button type="button" id="reset-btn">Reset</button>
+                    <button type="button" onclick="validation();">Hitung</button>
+                    <button type="button" onclick="resetForm();">Reset</button>
                 </form>
             </section>
         </section>
 
-        <section>
-            <!-- Konten Atas Luas Segitiga -->
+
+        <section  id="keliling-section" style="display: none;">
+            <!-- Konten Atas Keliling Segitiga -->
             <section>
                 <div class="section-content">
-                    <h2> Luas Segitiga</h2>
+                    <h2> Keliling Segitiga</h2>
                 </div>
     
                 <div class="formula-img">
+                    <img src="assets/segitiga.png" alt="">
                     <img src="https://asset.kompas.com/crops/ZwOr6ZrEtAtid5uZmYhDFijYPa4=/175x161:1573x1094/750x500/data/photo/2022/03/09/62288763c6d64.png" alt="">
                 </div>
     
-                <p>Lorem Ipsum</p>
+                <p>Rumus Keliling Segitiga adalah => <b>K = Sisi 1 + Sisi 2 + Sisi 3</b></p> 
+                <b>Penting</b>
+                <br>
+                <p>K = Keliling</p>
             </section>
-            
+
             <!-- Pemisah Konten -->
             <hr>
 
-            <!-- Konten Bawah Luas Segitiga -->
+            <!-- Konten Bawah Keliling Segitiga -->
             <section>
                 <header>
-                    <h2>Hitung Luas Segitiga</h2>
+                    <h2>Hitung Keliling Segitiga</h2>
                 </header>
 
                 <form action="">                  
                     <section>
                         <div>
-                            <label for="">Alas:</label><input type="text">
+                            <label>Masukan Sisi 1:</label><input id="sisi1-input" type="number">
                         </div>
                         <div>
-                            <label for="">Tinggi:</label><input type="text">
+                            <label>Masukan Sisi 2:</label><input id="sisi2-input" type="number">
+                        </div><div>
+                            <label>Masukan Sisi 3:</label><input id="sisi3-input" type="number">
                         </div> 
                     </section>
 
-                    <p>Diketahui Lorem Ipsum...</p>
+                    <p id="output2"></p>
 
-                    <button type="button">Hitung</button>
-                    <button type="button" id="reset-btn">Reset</button>
+                    <button type="button" onclick="validationKeliling();">Hitung</button>
+                    <button type="button" onclick="resetForm2();">Reset</button>
                 </form>
             </section>
         </section>
 
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
